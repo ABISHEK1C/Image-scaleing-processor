@@ -1,0 +1,75 @@
+# Reading pref.tcl
+# do image_scalar_tb.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+# Start time: 15:04:31 on May 07,2025
+# vlog -reportprogress 300 Isp.v 
+# -- Compiling module image_scalar
+# 
+# Top level modules:
+# 	image_scalar
+# End time: 15:04:31 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+# Start time: 15:04:31 on May 07,2025
+# vlog -reportprogress 300 imager_tb_v.v 
+# -- Compiling module image_scalar_tb
+# 
+# Top level modules:
+# 	image_scalar_tb
+# End time: 15:04:31 on May 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2021.1 Compiler 2021.02 Feb  3 2021
+# Start time: 15:04:31 on May 07,2025
+# vlog -reportprogress 300 E:/Xilinx/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 15:04:32 on May 07,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -t 1ps -L xilinxcorelib_ver -L unisims_ver -lib work image_scalar_tb glbl 
+# Start time: 15:04:32 on May 07,2025
+# Loading work.image_scalar_tb
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.image_scalar
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.carry_save_adder
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.booth_multiplier
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'xilinxcorelib_ver' at "xilinxcorelib_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vsim-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# No such file or directory. (errno = ENOENT)
+# Loading work.glbl
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 15:36:47 on May 07,2025, Elapsed time: 0:32:15
+# Errors: 16, Warnings: 0

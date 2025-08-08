@@ -1,0 +1,26 @@
+Release 7.1i - xst H.38
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to .
+CPU : 0.00 / 0.40 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"carry_save_adder.prj"> succeeded.
+ 
+CPU : 0.02 / 0.41 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+
+Total memory usage is 147184 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

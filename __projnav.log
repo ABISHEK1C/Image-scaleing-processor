@@ -1,0 +1,1995 @@
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <ImageScalerPipeline> compiled
+No errors in compilation
+Analysis of file <"ImageScalerPipeline.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+ERROR:HDLCompilers:26 - "Isp.v" line 33 expecting 'endmodule', found 'module'
+Module <booth_multiplier> compiled
+ERROR:HDLCompilers:26 - "Isp.v" line 100 expecting 'EOF', found 'booth_multiplier'
+Analysis of file <"carry_save_adder.prj"> failed.
+--> 
+
+Total memory usage is 146992 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Check Syntax" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"carry_save_adder.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"carry_save_adder.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"carry_save_adder.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <carry_save_adder>.
+Module <carry_save_adder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <carry_save_adder>.
+    Related source file is "Isp.v".
+    Found 8-bit xor3 for signal <sum>.
+    Summary:
+	inferred   8 Xor(s).
+Unit <carry_save_adder> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                             : 1
+ 8-bit xor3                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <carry_save_adder> ...
+Loading device for application Rf_Device from file '3s100e.nph' in environment E:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block carry_save_adder, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100evq100-4 
+
+ Number of Slices:                       9  out of    960     0%  
+ Number of 4 input LUTs:                15  out of   1920     0%  
+ Number of bonded IOBs:                 40  out of     66    60%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 9.481ns
+
+=========================================================================
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <image_scalar>.
+Module <image_scalar> is correct for synthesis.
+ 
+Analyzing module <carry_save_adder>.
+Module <carry_save_adder> is correct for synthesis.
+ 
+Analyzing module <booth_multiplier>.
+Module <booth_multiplier> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <booth_multiplier>.
+    Related source file is "Isp.v".
+WARNING:Xst:1872 - Variable <i> is used but never assigned.
+    Found 16-bit adder for signal <$n0001> created at line 42.
+    Found 16-bit adder for signal <$n0002> created at line 42.
+    Found 16-bit adder for signal <$n0003> created at line 42.
+    Found 16-bit adder for signal <$n0004> created at line 42.
+    Found 16-bit adder for signal <$n0005> created at line 42.
+    Found 16-bit adder for signal <$n0006> created at line 42.
+    Found 16-bit adder for signal <$n0007> created at line 42.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+Unit <booth_multiplier> synthesized.
+
+
+Synthesizing Unit <carry_save_adder>.
+    Related source file is "Isp.v".
+    Found 8-bit xor3 for signal <sum>.
+    Summary:
+	inferred   8 Xor(s).
+Unit <carry_save_adder> synthesized.
+
+
+Synthesizing Unit <image_scalar>.
+    Related source file is "Isp.v".
+WARNING:Xst:647 - Input <B1> is never used.
+WARNING:Xst:647 - Input <B2> is never used.
+WARNING:Xst:647 - Input <B3> is never used.
+WARNING:Xst:647 - Input <B4> is never used.
+WARNING:Xst:1780 - Signal <sum1> is never used or assigned.
+WARNING:Xst:1780 - Signal <sum2> is never used or assigned.
+WARNING:Xst:1780 - Signal <sum3> is never used or assigned.
+WARNING:Xst:1780 - Signal <sum4> is never used or assigned.
+WARNING:Xst:1780 - Signal <temp_i_1> is never used or assigned.
+    Found 8-bit comparator greater for signal <$n0000> created at line 91.
+    Found 8-bit register for signal <carry_csa_reg>.
+    Found 8-bit subtractor for signal <dx>.
+    Found 8-bit register for signal <dx_reg>.
+    Found 8-bit subtractor for signal <dy>.
+    Found 8-bit register for signal <dy_reg>.
+    Found 8-bit register for signal <final_carry_reg>.
+    Found 8-bit register for signal <final_sum_reg>.
+    Found 16-bit register for signal <mult_result_reg>.
+    Found 8-bit register for signal <sum_csa_reg>.
+    Found 8-bit register for signal <T2_reg>.
+    Found 8-bit register for signal <T3_reg>.
+    Found 8-bit register for signal <T4_reg>.
+    Found 8-bit register for signal <temp_i_reg>.
+    Summary:
+	inferred  96 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <image_scalar> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 9
+ 16-bit adder                      : 7
+ 8-bit subtractor                  : 2
+# Registers                        : 11
+ 16-bit register                   : 1
+ 8-bit register                    : 10
+# Comparators                      : 1
+ 8-bit comparator greater          : 1
+# Xors                             : 2
+ 8-bit xor3                        : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <image_scalar> ...
+
+Optimizing unit <carry_save_adder> ...
+
+Optimizing unit <booth_multiplier> ...
+Loading device for application Rf_Device from file '3s100e.nph' in environment E:/Xilinx.
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch  <final_carry_reg_0> (without init value) has a constant value of 0 in block <image_scalar>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <carry_csa_reg_0> (without init value) has a constant value of 0 in block <image_scalar>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <mult_result_reg_0> (without init value) has a constant value of 0 in block <image_scalar>.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block image_scalar, actual ratio is 11.
+FlipFlop carry_csa_reg_1 has been replicated 2 time(s)
+PACKER Warning: Lut BM1/booth_multiplier__n0003<4>lut driving carry BM1/booth_multiplier__n0003<4>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0003<5>lut driving carry BM1/booth_multiplier__n0003<5>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0003<6>lut driving carry BM1/booth_multiplier__n0003<6>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0003<7>lut driving carry BM1/booth_multiplier__n0003<7>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0003<8>lut driving carry BM1/booth_multiplier__n0003<8>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<6>lut driving carry BM1/booth_multiplier__n0005<6>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<7>lut driving carry BM1/booth_multiplier__n0005<7>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<8>lut driving carry BM1/booth_multiplier__n0005<8>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<9>lut driving carry BM1/booth_multiplier__n0005<9>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<10>lut driving carry BM1/booth_multiplier__n0005<10>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<11>lut driving carry BM1/booth_multiplier__n0005<11>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<8>lut driving carry BM1/booth_multiplier__n0007<8>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<9>lut driving carry BM1/booth_multiplier__n0007<9>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<10>lut driving carry BM1/booth_multiplier__n0007<10>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<11>lut driving carry BM1/booth_multiplier__n0007<11>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<12>lut driving carry BM1/booth_multiplier__n0007<12>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<13>lut driving carry BM1/booth_multiplier__n0007<13>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<7>lut driving carry BM1/booth_multiplier__n0006<7>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<8>lut driving carry BM1/booth_multiplier__n0006<8>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<9>lut driving carry BM1/booth_multiplier__n0006<9>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<10>lut driving carry BM1/booth_multiplier__n0006<10>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<11>lut driving carry BM1/booth_multiplier__n0006<11>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<12>lut driving carry BM1/booth_multiplier__n0006<12>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<5>lut driving carry BM1/booth_multiplier__n0004<5>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<6>lut driving carry BM1/booth_multiplier__n0004<6>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<7>lut driving carry BM1/booth_multiplier__n0004<7>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<8>lut driving carry BM1/booth_multiplier__n0004<8>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<9>lut driving carry BM1/booth_multiplier__n0004<9>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<10>lut driving carry BM1/booth_multiplier__n0004<10>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100evq100-4 
+
+ Number of Slices:                     120  out of    960    12%  
+ Number of Slice Flip Flops:            95  out of   1920     4%  
+ Number of 4 input LUTs:               181  out of   1920     9%  
+ Number of bonded IOBs:                 73  out of     66   110% (*) 
+ Number of GCLKs:                        1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 95    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 33.285ns (Maximum Frequency: 30.044MHz)
+   Minimum input arrival time before clock: 6.625ns
+   Maximum output required time after clock: 11.959ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <image_scalar>.
+Module <image_scalar> is correct for synthesis.
+ 
+    Set property "resynthesize = true" for unit <image_scalar>.
+Analyzing module <carry_save_adder>.
+Module <carry_save_adder> is correct for synthesis.
+ 
+Analyzing module <booth_multiplier>.
+Module <booth_multiplier> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <booth_multiplier>.
+    Related source file is "Isp.v".
+WARNING:Xst:1872 - Variable <i> is used but never assigned.
+    Found 16-bit adder for signal <$n0001> created at line 42.
+    Found 16-bit adder for signal <$n0002> created at line 42.
+    Found 16-bit adder for signal <$n0003> created at line 42.
+    Found 16-bit adder for signal <$n0004> created at line 42.
+    Found 16-bit adder for signal <$n0005> created at line 42.
+    Found 16-bit adder for signal <$n0006> created at line 42.
+    Found 16-bit adder for signal <$n0007> created at line 42.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+Unit <booth_multiplier> synthesized.
+
+
+Synthesizing Unit <carry_save_adder>.
+    Related source file is "Isp.v".
+    Found 8-bit xor3 for signal <sum>.
+    Summary:
+	inferred   8 Xor(s).
+Unit <carry_save_adder> synthesized.
+
+
+Synthesizing Unit <image_scalar>.
+    Related source file is "Isp.v".
+WARNING:Xst:647 - Input <B1> is never used.
+WARNING:Xst:647 - Input <B2> is never used.
+WARNING:Xst:647 - Input <B3> is never used.
+WARNING:Xst:647 - Input <B4> is never used.
+WARNING:Xst:1780 - Signal <sum1> is never used or assigned.
+WARNING:Xst:1780 - Signal <sum2> is never used or assigned.
+WARNING:Xst:1780 - Signal <sum3> is never used or assigned.
+WARNING:Xst:1780 - Signal <sum4> is never used or assigned.
+WARNING:Xst:1780 - Signal <temp_i_1> is never used or assigned.
+    Found 8-bit comparator greater for signal <$n0000> created at line 91.
+    Found 8-bit register for signal <carry_csa_reg>.
+    Found 8-bit subtractor for signal <dx>.
+    Found 8-bit register for signal <dx_reg>.
+    Found 8-bit subtractor for signal <dy>.
+    Found 8-bit register for signal <dy_reg>.
+    Found 8-bit register for signal <final_carry_reg>.
+    Found 8-bit register for signal <final_sum_reg>.
+    Found 16-bit register for signal <mult_result_reg>.
+    Found 8-bit register for signal <sum_csa_reg>.
+    Found 8-bit register for signal <T2_reg>.
+    Found 8-bit register for signal <T3_reg>.
+    Found 8-bit register for signal <T4_reg>.
+    Found 8-bit register for signal <temp_i_reg>.
+    Summary:
+	inferred  96 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <image_scalar> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 9
+ 16-bit adder                      : 7
+ 8-bit subtractor                  : 2
+# Registers                        : 11
+ 16-bit register                   : 1
+ 8-bit register                    : 10
+# Comparators                      : 1
+ 8-bit comparator greater          : 1
+# Xors                             : 2
+ 8-bit xor3                        : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <image_scalar> ...
+
+Optimizing unit <carry_save_adder> ...
+
+Optimizing unit <booth_multiplier> ...
+Loading device for application Rf_Device from file '3s100e.nph' in environment E:/Xilinx.
+
+Mapping all equations...
+WARNING:Xst:1710 - FF/Latch  <final_carry_reg_0> (without init value) has a constant value of 0 in block <image_scalar>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <carry_csa_reg_0> (without init value) has a constant value of 0 in block <image_scalar>.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch  <mult_result_reg_0> (without init value) has a constant value of 0 in block <image_scalar>.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block image_scalar, actual ratio is 11.
+FlipFlop carry_csa_reg_1 has been replicated 2 time(s)
+PACKER Warning: Lut BM1/booth_multiplier__n0003<4>lut driving carry BM1/booth_multiplier__n0003<4>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0003<5>lut driving carry BM1/booth_multiplier__n0003<5>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0003<6>lut driving carry BM1/booth_multiplier__n0003<6>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0003<7>lut driving carry BM1/booth_multiplier__n0003<7>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0003<8>lut driving carry BM1/booth_multiplier__n0003<8>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<6>lut driving carry BM1/booth_multiplier__n0005<6>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<7>lut driving carry BM1/booth_multiplier__n0005<7>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<8>lut driving carry BM1/booth_multiplier__n0005<8>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<9>lut driving carry BM1/booth_multiplier__n0005<9>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<10>lut driving carry BM1/booth_multiplier__n0005<10>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0005<11>lut driving carry BM1/booth_multiplier__n0005<11>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<8>lut driving carry BM1/booth_multiplier__n0007<8>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<9>lut driving carry BM1/booth_multiplier__n0007<9>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<10>lut driving carry BM1/booth_multiplier__n0007<10>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<11>lut driving carry BM1/booth_multiplier__n0007<11>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<12>lut driving carry BM1/booth_multiplier__n0007<12>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0007<13>lut driving carry BM1/booth_multiplier__n0007<13>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<7>lut driving carry BM1/booth_multiplier__n0006<7>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<8>lut driving carry BM1/booth_multiplier__n0006<8>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<9>lut driving carry BM1/booth_multiplier__n0006<9>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<10>lut driving carry BM1/booth_multiplier__n0006<10>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<11>lut driving carry BM1/booth_multiplier__n0006<11>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0006<12>lut driving carry BM1/booth_multiplier__n0006<12>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<5>lut driving carry BM1/booth_multiplier__n0004<5>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<6>lut driving carry BM1/booth_multiplier__n0004<6>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<7>lut driving carry BM1/booth_multiplier__n0004<7>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<8>lut driving carry BM1/booth_multiplier__n0004<8>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<9>lut driving carry BM1/booth_multiplier__n0004<9>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut BM1/booth_multiplier__n0004<10>lut driving carry BM1/booth_multiplier__n0004<10>cy can not be packed with the carry due to conflict with the common signal requirement between the LUT inputs and the Carry DI/MAND pins. This would result in an extra LUT for a feedthrough.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100evq100-4 
+
+ Number of Slices:                     120  out of    960    12%  
+ Number of Slice Flip Flops:            95  out of   1920     4%  
+ Number of 4 input LUTs:               181  out of   1920     9%  
+ Number of bonded IOBs:                 73  out of     66   110% (*) 
+ Number of GCLKs:                        1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 95    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 33.285ns (Maximum Frequency: 30.044MHz)
+   Minimum input arrival time before clock: 6.625ns
+   Maximum output required time after clock: 11.959ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "rmu.v"
+Module <rmu> compiled
+No errors in compilation
+Analysis of file <"rmu.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+Module <ReconfigurableMultiplier> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+Module <ReconfigurableMultiplier> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Compiling verilog file "Isp.v"
+tdtfi(verilog) completed successfully.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Compiling verilog file "Isp.v"
+tdtfi(verilog) completed successfully.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Compiling verilog file "Isp.v"
+tdtfi(verilog) completed successfully.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Compiling verilog file "Isp.v"
+tdtfi(verilog) completed successfully.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Compiling verilog file "Isp.v"
+tdtfi(verilog) completed successfully.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Compiling verilog file "Isp.v"
+tdtfi(verilog) completed successfully.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+ERROR:HDLCompilers:19 - "Isp.v" line 38 Empty sensitivity list
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+Analysis of file <"image_scalar.prj"> failed.
+--> 
+
+Total memory usage is 147888 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Check Syntax" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <carry_save_adder> compiled
+Module <booth_multiplier> compiled
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Compiling verilog file "Isp.v"
+tdtfi(verilog) completed successfully.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "View RTL Schematic".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+ERROR:HDLCompilers:91 - "Isp.v" line 65 Module 'booth_multiplier' does not have a port named 'clk'
+--> 
+
+Total memory usage is 149360 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "View RTL Schematic" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+ERROR:HDLCompilers:91 - "Isp.v" line 59 Module 'booth_multiplier' does not have a port named 'clk'
+--> 
+
+Total memory usage is 149856 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <image_scalar>.
+ERROR:Xst:850 - "Isp.v" line 39: Unsupported System Function Call. 
+ERROR:Xst:850 - "Isp.v" line 39: Unsupported System Function Call. 
+ERROR:Xst:850 - "Isp.v" line 38: Unsupported System Function Call. 
+ERROR:Xst:850 - "Isp.v" line 38: Unsupported System Function Call. 
+    Set property "resynthesize = true" for unit <image_scalar>.
+ 
+Found 4 error(s). Aborting synthesis.
+--> 
+
+Total memory usage is 153504 kilobytes
+
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Check Syntax".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+ERROR:HDLCompilers:91 - "Isp.v" line 59 Module 'booth_multiplier' does not have a port named 'clk'
+--> 
+
+Total memory usage is 149792 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+ERROR:HDLCompilers:91 - "Isp.v" line 59 Module 'booth_multiplier' does not have a port named 'clk'
+--> 
+
+Total memory usage is 149408 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+ERROR:HDLCompilers:91 - "Isp.v" line 59 Module 'booth_multiplier' does not have a port named 'clk'
+--> 
+
+Total memory usage is 150048 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+ERROR:HDLCompilers:91 - "Isp.v" line 59 Module 'booth_multiplier' does not have a port named 'clk'
+--> 
+
+Total memory usage is 149600 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+ERROR:HDLCompilers:91 - "Isp.v" line 59 Module 'booth_multiplier' does not have a port named 'clk'
+--> 
+
+Total memory usage is 149728 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+ERROR:HDLCompilers:91 - "Isp.v" line 59 Module 'booth_multiplier' does not have a port named 'clk'
+--> 
+
+Total memory usage is 149280 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+ERROR:HDLCompilers:91 - "Isp.v" line 59 Module 'booth_multiplier' does not have a port named 'clk'
+--> 
+
+Total memory usage is 149472 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Isp.v"
+Module <image_scalar> compiled
+No errors in compilation
+Analysis of file <"image_scalar.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+ERROR:HDLCompilers:91 - "Isp.v" line 59 Module 'booth_multiplier' does not have a port named 'clk'
+--> 
+
+Total memory usage is 149408 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+

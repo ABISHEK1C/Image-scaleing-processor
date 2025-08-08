@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn __projnav/carry_save_adder.xst -ofn carry_save_adder.syr
